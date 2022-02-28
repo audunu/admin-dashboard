@@ -1,0 +1,83 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    background-color: rgb(0, 132, 255);
+    
+    
+}
+
+.header {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.main-content {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+    background-color: rgb(225, 227, 230);
+    display: flex;
+}
+
+.morgan {
+    justify-self: flex-start;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: -25px;
+}
+
+img[src*="message"] {
+    vertical-align:-40%;
+    margin-right: 10px;
+    
+}
+
+li {
+    color: white;
+    padding: 7px;
+}
+
+.sidebar > ul:first-child > li:first-child {
+    font-size: 1.3rem;
+}
+
+.sidebar > ul:first-child > li:first-child img {
+    height: 2rem;
+    vertical-align:-40%;
+    margin-left: -3px;
+    margin-right: 4px;
+}
+
+img[src*="search"] {
+    width: 1rem;
+}
+
+img[src*="duck"] {
+    width: 2rem;
+}
+
+img[src*="bell"] {
+    width: 1rem;
+    justify-self: flex-end;
+    align-self: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border-radius: 25px;
+    height: 2rem;
+    width: 6rem;
+}

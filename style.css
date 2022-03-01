@@ -1,3 +1,10 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: none;
+    padding: none;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -7,25 +14,84 @@
 .sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
-    background-color: rgb(0, 132, 255);
-    
-    
+    background-color: rgb(0, 132, 255);   
 }
 
 .header {
     grid-column: 2 / -1;
     grid-row: 1 / 2;
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-columns: 5fr 4fr;
     grid-template-rows: 1fr 1fr;
+    
 }
 
-.main-content {
-    grid-column: 2 / -1;
-    grid-row: 2 / -1;
-    background-color: rgb(225, 227, 230);
+.header > div:first-of-type {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
+
+.header > div:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+    font-size: 0.8rem;
+
+}
+
+.header > div:nth-of-type(3) {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: -10px;
+}
+
+.header > div:nth-of-type(4) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: -10px;
+}
+
+.header > div:first-of-type > input {
+    background-color: rgb(236, 234, 234);
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    width: 80%;
+}
+
+.header > div:nth-of-type(3) > img {
+    width: 3rem;
+    margin-left: 30px;
+}
+
+.header > div:nth-of-type(3) > div > span {
+    font-size: 0.6rem;
+    
+}
+
+
+img[src*="search"] {
+    width: 1rem;
+}
+
+img[src*="duck"] {
+    width: 2rem;
+}
+
+img[src*="bell"] {
+    width: 1rem;
+}
+
 
 .morgan {
     justify-self: flex-start;
@@ -58,26 +124,24 @@ li {
     margin-right: 4px;
 }
 
-img[src*="search"] {
-    width: 1rem;
-}
 
-img[src*="duck"] {
-    width: 2rem;
-}
-
-img[src*="bell"] {
-    width: 1rem;
-    justify-self: flex-end;
-    align-self: center;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
 
 button {
-    background-color: blue;
+    background-color: rgb(37, 122, 233);
     color: white;
     border-radius: 25px;
     height: 2rem;
-    width: 6rem;
+    width: 27%;
+}
+
+
+.main-content {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+    background-color: rgb(225, 227, 230);
+    display: flex;
+}
+
+.projects {
+    
 }

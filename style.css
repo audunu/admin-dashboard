@@ -140,8 +140,9 @@ button {
     grid-row: 2 / -1;
     background-color: rgb(225, 227, 230);
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: 15px;
+    grid-template-columns: 5fr 2fr;
+    padding: 45px 15px;
+    gap: 15px;
 }
 
 .projects {
@@ -155,9 +156,59 @@ button {
     border-left: solid 5px orange;
     border-radius: 5px;
     background-color: white;
+    padding: 25px;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card > div {
+    align-self: flex-end;
+}
+
+.card > span {
+    font-weight: normal;
+    color: grey;
+    font-size: 0.7rem;
+    margin-top: -30px;
+}
+
+.card img {
+    width: 1.2rem;
+
 }
 
 .right {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    font-size: 0.7rem;
+    padding: 0px;
+    gap: 60px;
 }
+
+.announcements, .trending {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.trending > div {
+    display: flex;
+    align-items: center;
+    gap: 10px
+
+}
+
+.announcements > span {
+    color: grey;
+}
+
+.trending > div > span {
+    color: grey;
+}
+
